@@ -1,16 +1,19 @@
 .header {
-    background: var(--gray-800);
-    color: var(--gray-100);
+    background: var(--gray-900);
+    color: var(--gray-200);
     display: flex;
     justify-content: center;
     padding: 1rem 0;
+
+    border-bottom: 2px solid var(--gray-700);
+    border-color: var(--gray-700);
 }
 
 .header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .header img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
 }
