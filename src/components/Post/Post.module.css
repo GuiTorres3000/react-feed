@@ -1,10 +1,85 @@
 .post {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    max-width: 70vw;
+    background: var(--gray-800);
+    margin: 2rem auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--gray-600);
+}
+
+.header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--gray-600);
+}
+
+.author {
+    display: flex;
     align-items: center;
-    padding: 2rem;
-    max-width: 50vw;
-    background: var(--gray-200);
-    margin: 0 auto;
-    border-radius: 16px;
+    gap: 1rem;
+    position: relative;
+}
+
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-500);
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorInfo strong {
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+
+.authorInfo span {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    line-height: 1.6;
+}
+
+.time {
+    position: absolute;
+    right: 0;
+    font-size: 0.875rem;
+    color: var(--gray-400);
+}
+
+.content {
+    padding: 1.5rem;
+    line-height: 1.6;
+    color: var(--gray-300);
+}
+
+.content h2 {
+    color: var(--gray-100);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .post {
+        max-width: 90vw;
+    }
+    
+    .author {
+        flex-wrap: wrap;
+    }
+    
+    .time {
+        position: relative;
+        margin-top: 1rem;
+    }
 }
